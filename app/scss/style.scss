@@ -4,6 +4,8 @@
 @import "libs";
 @import "global";
 // === PARTIALS ===
+
+// === HEADER ===
 .header {
   &__inner {
     height: 144px;
@@ -72,7 +74,7 @@
   &__shopping-num {
     position: absolute;
     top: 8px;
-    right: 22px;
+    right: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -86,7 +88,7 @@
     background-color: $white;
 
     &--cart {
-      right: 111px;
+      right: 109px;
     }
   }
 
@@ -96,12 +98,111 @@
   }
 }
 
-.logo {
-  &__image {
-    max-width: 146px;
-    max-height: 39px;
+// === / HEADER ===
+
+// === FOOTER ===
+.footer {
+  color: #7b7b7b;
+}
+.footer-top {
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    max-width: 240px;
+  }
+
+  &__logo {
+    margin-bottom: 21px;
+  }
+
+  &__address {
+    margin-bottom: 17px;
+    line-height: 24px;
+  }
+
+  &__phone {
+    margin-bottom: 22px;
+  }
+
+  &__navigation {
+    max-width: 240px;
+  }
+
+  &__title {
+    margin: 16px 0 30px 0;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #1f2044;
+  }
+
+  &__list-item {
+    margin-bottom: 15px;
+  }
+
+  &__item-link {
+  }
+
+  &__item-form {
+    max-width: 270px;
+  }
+
+  &__text {
+    margin-bottom: 38px;
+    line-height: 24px;
+  }
+
+  &__form-input {
+    padding: 15px 10px;
+    border: none;
+    @extend %dm-sans-400;
+    line-height: 1;
+    font-size: 12px;
+    background-color: #fef7f0;
+
+    &::placeholder {
+      @extend %dm-sans-400;
+      font-size: 12px;
+      color: #234969;
+    }
+  }
+
+  &__form-button {
+    margin-left: -4px;
+    border: none;
+    padding: 16px 14px;
+    @extend %dm-sans-400;
+    line-height: 1;
+    color: $white;
+    background-color: #a3bbc8;
   }
 }
+
+.footer-bottom {
+  border-top: 1px solid #dae4e9;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__menu-link {
+    margin-right: 15px;
+  }
+
+  &__menu {
+    margin-right: -13px;
+    display: flex;
+  }
+
+  &__menu-item {
+    & + & {
+      border-left: 1px solid #7b7b7b;
+      padding-left: 15px;
+    }
+  }
+}
+// === / FOOTER ===
 
 // === ADAPTIVE ===
 @import "media";

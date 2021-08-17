@@ -6,14 +6,33 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  // @extend %;
-  // font-size: px;
+  @extend %rubik-400;
+  font-size: 14px;
   // line-height: px;
   // color: $default;
 }
 
+a {
+  // @extend %;
+  // font-size: px;
+  // line-height: px;
+  // color: $default;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-wide {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .container {
-  max-width: 1770px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -22,10 +41,9 @@ body {
   flex-grow: 1;
 }
 
-a {
-  // @extend %;
-  // font-size: px;
-  // line-height: px;
-  // color: $default;
-  cursor: pointer;
+.logo {
+  &__image {
+    max-width: 146px;
+    max-height: 39px;
+  }
 }
